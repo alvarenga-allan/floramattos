@@ -1,0 +1,84 @@
+.servicos {
+  max-width: 1400px;
+  padding: 40px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas: 
+  'title title'
+  'servicos servicos';
+  grid-template-rows: 1fr 2fr 1fr;
+  background-image: url(/assets/images/ilustration.jpg);
+  height: 100vh;
+
+}
+.servicos .subtitulo {
+  color: #141414;;
+  grid-area: title;
+  font-weight: 400;
+
+}
+
+.servicos-texto {
+  grid-area: text;
+  font-size: 1.5rem;
+  line-height: 1.33;
+  max-width: 60ch;
+  margin-bottom: 60px;
+  color: #525252;
+  
+}
+
+.servicos-texto strong {
+  color: #141414;
+}
+
+.servicos-container{
+  grid-area: servicos;
+  max-width: 1200px;
+  margin: auto;
+  align-items: center;
+  justify-items: center;
+}
+
+.slider-block{
+  padding:20px;
+ border: #59bd08 2px solid;
+ margin:10px;
+ border-radius: 15px;
+box-shadow: 0px 0px 16px 0px #0000001f;
+background-color: #f4f7f8;
+}
+
+p{
+  text-align: center;
+  padding: 10px 20px;
+}
+
+h3{
+text-align: center;
+}
+
+@media (max-width: 800px) {
+  .servicos {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .servicos .subtitulo {
+    color: #141414;
+  }
+  .servicos-texto {
+    font-size: 1.25rem;
+  }
+  .empresa-ano {
+    position: initial;
+    order: 1;
+    width: initial;
+    text-align: left;
+  }
+}
+
+@media (max-width: 400px) {
+  .empresa {
+    grid-template-columns: 1fr;
+  }
+}
